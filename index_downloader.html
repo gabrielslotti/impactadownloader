@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SI-5A Downloader</title>
+        <meta charset="utf-8" />
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <style type="text/css">
+            #banner{
+                height:100vh;
+                background-image: linear-gradient(to bottom, #212529, #007bff);
+                background-blend-mode: color-dodge;
+            }
+            #banner .container-fluid .jumbotron{
+                background: transparent;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="banner">
+            <div class="container-fluid">
+                <div class="jumbotron text-center"><br>
+                    <h3>Áudio|Vídeo Downloader</h3>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 offset-md-4">
+                        <form action="http://localhost:3052/download" method="GET"></form>
+                            <div class="form-group">
+                                <label for='input_url'>Coloque a URL do vídeo:</label>
+                                <input class="form-control" id='input_url' type="text" name="url" placeholder="Url do Áudio|Vídeo" required />
+                                <br>
+                                <label for='select_type'>Selecione o tipo:</label>
+                                <select class="form-control" name='type' id='select_type' required>
+                                    <option value='video'>Vídeo</option>
+                                    <option value='audio'>Áudio</option>
+                                </select>
+                            </div>
+                            <div class="form-group text-center">
+                                <input class="btn btn-primary" type="submit" value="Download" style="background-color: #007bff"/>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
