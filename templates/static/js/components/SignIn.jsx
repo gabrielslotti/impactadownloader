@@ -24,8 +24,8 @@ export default class SignIn extends Component {
             <Modal show={true}>
                 <Modal.Header closeButton onClick={this.hideModalState}>Faça o Login</Modal.Header>
                 <Modal.Body>
-                    <FacebookLoginButton onClick={() => alert("Hello")} />
-                    <GithubLoginButton onClick={() => alert("Hello")} />
+                    <FacebookLoginButton onClick={() => alert("Hello World")} />
+                    <GithubLoginButton onClick={() => alert("Hello World")} />
                 </Modal.Body>
                 <Modal.Footer>
                 </Modal.Footer>
